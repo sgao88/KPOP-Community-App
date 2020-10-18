@@ -4,9 +4,6 @@ import 'package:hello_world/main.dart';
 
 
 class ForumPage extends StatelessWidget {
-  final Color color;
-
-  ForumPage(this.color);
 
   @override
   Widget build(BuildContext context) {

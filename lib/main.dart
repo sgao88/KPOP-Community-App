@@ -36,9 +36,9 @@ class _HomepageState extends State<Homepage> {
   int _currentIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   final List<Widget> _children = [
-    HomePage(background),
-    SearchPage(Colors.blue),
-    ForumPage(Colors.deepPurpleAccent),
+    HomePage(),
+    SearchPage(),
+    ForumPage(),
     ProfilePage(Colors.pink)
   ];
 
