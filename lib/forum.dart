@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:faker/faker.dart';
 import 'package:hello_world/main.dart';
 
-
 class ForumPage extends StatelessWidget {
 
   @override
