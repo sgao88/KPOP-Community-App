@@ -7,6 +7,8 @@ import 'forum.dart';
 import 'profile.dart';
 
 void main() => runApp(MyApp());
+Color mainColor = Color(0xFF2A8EDF);
+Color background = Color(0xFFFFFFF2);
 
 class MyApp extends StatelessWidget {
   @override
@@ -14,9 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'KPOP Community',
         theme: ThemeData(
-          primaryColor: Colors.pinkAccent,
+          primaryColor: mainColor,
           accentColor: Colors.lightBlueAccent,
-          textTheme: TextTheme(bodyText2: TextStyle(color: Colors.deepPurpleAccent)),
+          textTheme: TextTheme(bodyText2: TextStyle(color: Colors.black)),
+
         ),
         home: Homepage(),
     );
@@ -33,7 +36,7 @@ class _HomepageState extends State<Homepage> {
   int _currentIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   final List<Widget> _children = [
-    HomePage(Colors.white),
+    HomePage(background),
     SearchPage(Colors.blue),
     ForumPage(Colors.deepPurpleAccent),
     ProfilePage(Colors.pink)
@@ -48,7 +51,7 @@ class _HomepageState extends State<Homepage> {
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
         currentIndex: _currentIndex,
-        selectedItemColor: Colors.pink,
+        selectedItemColor: mainColor,
         onTap: onTabTapped,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
