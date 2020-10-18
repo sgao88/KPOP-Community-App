@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  final Color color;
-
-  HomePage(this.color);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -13,7 +9,6 @@ class HomePage extends StatelessWidget {
         ),
         padding: const EdgeInsets.all(8.0),
         alignment: Alignment.center,
-      color: color,
       child: ListView(
         // padding: const EdgeInsets.all(8),
         children: <Widget>[
