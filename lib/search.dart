@@ -9,8 +9,6 @@ class SearchPage extends StatelessWidget {
   Color background = Color(0xFFFFFFF2);
   Color headerColor = Color(0xFF2B2D42);
 
-  SearchPage(mainColor);
-
   @override
   Widget build(BuildContext context) {
     return Column(
