@@ -25,7 +25,6 @@ class _RandomSentenceState extends State<RandomSentence> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: background,
       body: _buildSuggestions(),
     );
   }
@@ -56,7 +55,4 @@ class _RandomSentenceState extends State<RandomSentence> {
           return _buildRow(_suggestions[index]);
         });
   }
-
-
-
 }

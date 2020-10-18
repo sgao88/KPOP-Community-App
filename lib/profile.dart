@@ -29,7 +29,6 @@ class ProfilePage extends StatelessWidget {
                         style: TextStyle(
                           decoration: TextDecoration.underline,
                           decorationColor: Colors.black,
-                          color: Colors.black,
                         )
                     )
                   ],
@@ -48,7 +47,6 @@ class ProfilePage extends StatelessWidget {
                       style: TextStyle(
                         backgroundColor: Color(0xFFB8D9F4),
                         fontStyle: FontStyle.italic,
-                        color: Colors.black,
                         fontSize: 20,
                       )
                   ),
@@ -58,7 +56,7 @@ class ProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.all(10.0),
                 child: Text('Here is a fancy, nice, autobiography without too much information '
                     'because the internet is dangerous. Don''t doxx yourselves, kids!',
-                    style: TextStyle(color: Colors.black, fontSize: 15)),
+                    style: TextStyle(fontSize: 15)),
               )
             ],
           ),
@@ -72,7 +70,6 @@ class ProfilePage extends StatelessWidget {
                     style: TextStyle(
                       backgroundColor: Color(0xFFB8D9F4),
                       fontStyle: FontStyle.italic,
-                      color: Colors.black,
                       fontSize: 20,
                     )
                 ),
@@ -88,7 +85,6 @@ class ProfilePage extends StatelessWidget {
                     style: TextStyle(
                       backgroundColor: Color(0xFFB8D9F4),
                       fontStyle: FontStyle.italic,
-                      color: Colors.black,
                       fontSize: 20,
                     )
                 ),
@@ -101,6 +97,7 @@ class ProfilePage extends StatelessWidget {
   }
 }
 
+//broken buttons :'(
 class ProfileSlideWidget extends StatefulWidget {
   ProfileSlideWidget({Key key}) : super(key: key);
   @override
@@ -118,7 +115,6 @@ class _ProfileSlideWidgetState extends State<ProfileSlideWidget> {
     return Scaffold(
       body: Column(
         children: [
-          Text("ligma"),
           _children[_currentIndex],
           Row(
             children: [
